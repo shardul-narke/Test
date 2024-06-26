@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-image: url('wall.jpg'); /* Replace with your background image URL */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.page2 .banner {
+    background-image: url('wall2.jpg'); /* Replace with your second background image URL */
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0px; /* Add some padding to the left */
+    right: 75px;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, rgba(255,165,0,0.5), rgba(255,69,0,0.5));
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo img {
+    max-height: 100%;
+}
+
+.logo:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transform: translateY(3px); /* Sinking effect */
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0px); /* Initial blur effect */
+    margin-top: 80px; /* Adjust to account for the height of the fixed navbar */
+    transition: transform 0.3s ease, backdrop-filter 0.3s ease; /* Add transition for zoom and blur effect */
+}
+
+.content:hover {
+    transform: scale(1.05); /* Zoom effect */
+    backdrop-filter: blur(10px); /* Blur effect on hover */
+}
+
+.page2 .content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0px); /* Initial blur effect */
+    margin-top: 80px; /* Adjust to account for the height of the fixed navbar */
+    transition: transform 0.3s ease, backdrop-filter 0.3s ease; /* Add transition for zoom and blur effect */
+}
+
+.page2 .content:hover {
+    transform: scale(1.05); /* Zoom effect */
+    backdrop-filter: blur(10px); /* Blur effect on hover */
+}
